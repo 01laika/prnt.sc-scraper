@@ -1,4 +1,4 @@
-# scrapes random screenshots on https://prnt.sc!
+# scrapes random screenshots from https://prnt.sc
 # usage 
 - python main.py
 - input delay
