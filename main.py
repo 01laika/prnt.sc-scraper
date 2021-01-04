@@ -20,6 +20,6 @@ while True:
            print("invalid link")
         else:
             if title.get_text() == "Screenshot by Lightshot":
-                print(f"found valid link {url} saved to working.txt")
+                print(f"found valid link => {url}")
                 f = open("found.txt", "a")
-                f.write(f"working url\t==>  {url}\n")
+                f.write(f"working url\t=> {url}\n") 
