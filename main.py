@@ -22,4 +22,4 @@ while True:
             if title.get_text() == "Screenshot by Lightshot":
                 print(f"found valid link => {url}")
                 f = open("found.txt", "a")
-                f.write(f"working url\t=> {url}\n") 
+                f.write(f"{url}\n") 
