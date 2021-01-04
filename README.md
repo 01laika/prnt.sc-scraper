@@ -1,0 +1,1 @@
+# prnt.sc-scraper
