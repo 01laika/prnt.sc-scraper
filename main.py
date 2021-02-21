@@ -1,25 +1,33 @@
 from bs4 import BeautifulSoup
-from random import randint
-import random
+from random import randint, choice
+import urllib3
 import requests
+import random
 import string
 import time
 
-user_agent = {"User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"}
-letters = string.ascii_lowercase
-delay = float(input("delay per each request sent?\t=> "))
+delay = float(input("input delay per each request sent => "))
 
 while True:
-    iden = ( ''.join(random.choice(letters)for i in range(randint(3, 11))))
-    url = f"http://prnt.sc/{iden}"
+    http = urllib3.PoolManager()
+    chars = string.ascii_lowercase + string.digits
+    iden = ''.join(choice(chars) for i in range(randint(3, 13)))
     time.sleep(delay)
-    reqs = requests.get(url, headers=user_agent) 
-    soup = BeautifulSoup(reqs.text, 'html.parser') 
-    for title in soup.find_all('title'): 
-        if title.get_text() == "Lightshot — screenshot tool for Mac & Win":
-           print("invalid link")
+    url = f"https://prnt.sc/{iden}"
+    response = http.request('GET', url)
+    soup = BeautifulSoup(response.data, "html.parser")
+    images = soup.findAll('img')
+
+    for image in images:
+        if image["src"] == "//st.prntscr.com/2021/02/09/0221/img/0_173a7b_211be8ff.png":
+            print("deleted image found")
+            break
+        for title in soup.find_all('title'): 
+            if title.get_text() == "Lightshot — screenshot tool for Mac & Win":
+                print("redirect found")
+                break
         else:
-            if title.get_text() == "Screenshot by Lightshot":
-                print(f"found valid link => {url}")
-                f = open("found.txt", "a")
-                f.write(f"{url}\n") 
+            print(f"found valid link => {url}")
+            f = open("found.txt", "a")
+            f.write(f"{url}\n") 
+            break
