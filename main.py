@@ -11,7 +11,7 @@ delay = float(input("input delay per each request sent => "))
 while True:
     http = urllib3.PoolManager()
     chars = string.ascii_lowercase + string.digits
-    iden = ''.join(choice(chars) for i in range(randint(3, 13)))
+    iden = ''.join(choice(chars) for i in range(randint(3, 7)))
     time.sleep(delay)
     url = f"https://prnt.sc/{iden}"
     response = http.request('GET', url)
