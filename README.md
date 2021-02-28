@@ -1,5 +1,5 @@
 # prnt.sc scraper
-[prnt.sc tutorial]https://www.youtube.com/watch?v=54j1wA0qdTo)
+[prnt.sc tutorial](https://www.youtube.com/watch?v=54j1wA0qdTo)
 
 ![](https://i.gyazo.com/3ae8b438c59cf803c7a18ac0e6d3ac44.gif)
 
