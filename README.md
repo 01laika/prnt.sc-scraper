@@ -1,6 +1,6 @@
 # prnt.sc scraper
 
-![](https://i.gyazo.com/fb5ccea825a965aea42057ebf02d74f8.gif)
+![](https://i.gyazo.com/3ae8b438c59cf803c7a18ac0e6d3ac44.gif)
 
 # update
 - parses removed pngs
