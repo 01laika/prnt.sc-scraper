@@ -8,16 +8,13 @@
 - better random string generator
 
 ## Requirements
-Run these commands in cmd, terminal or PowerShell (if you don't already have them installed installed)
+Run this command in cmd, terminal or PowerShell (if you don't already have them installed installed)
 ```
-pip install requests
-pip install urllib3
-pip install rich
-pip install bs4
+pip install -r requirements.txt
 ```
 
 # usage
 - python main.py 
 - input delay
-- saves all valid links to found.txt
+- sends scraped images to given webhook
 # laika#1331 for help
