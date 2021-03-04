@@ -11,6 +11,7 @@
 Run these commands in cmd, terminal or PowerShell (if you don't already have them installed installed)
 ```
 pip install requests
+pip install rich
 pip install bs4
 ```
 
