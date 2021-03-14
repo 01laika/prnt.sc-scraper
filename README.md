@@ -7,6 +7,7 @@
 - parses removed pngs
 - better random string generator
 - fixed erorr sending request
+- higher probability of finding valid image
 
 ## Requirements
 Run this command in cmd, terminal or PowerShell (if you don't already have them installed installed)
