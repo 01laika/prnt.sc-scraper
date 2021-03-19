@@ -60,7 +60,7 @@ def start():
                     "url": url,
                     "footer": {
                         "text": "made by laika#1331",
-                        "icon_url": "https://cdn.discordapp.com/avatars/798534483652902932/d89209969185055c9098c4d415b3c449.png?size=128"
+                        "icon_url": "https://cdn.discordapp.com/attachments/812934536882552872/820684736875724800/laika.jpg"
                     },
                     "author": {
                         "url": "https://github.com/01laika/prnt.sc-scraper",
