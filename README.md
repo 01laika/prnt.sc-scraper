@@ -8,6 +8,7 @@
 - better random string generator
 - fixed erorr sending request
 - higher probability of finding valid image
+- bug fix
 
 ## Requirements
 Run this command in cmd, terminal or PowerShell (if you don't already have them installed installed)
