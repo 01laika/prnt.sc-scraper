@@ -42,10 +42,10 @@ def start():
             images = soup.findAll('img')
 
             for image in images:
-                if image["src"] == "//st.prntscr.com/2021/02/09/0221/img/0_173a7b_211be8ff.png":
+                if image["src"] == "//st.prntscr.com/2021/04/08/1538/img/0_173a7b_211be8ff.png":
                     console.print("[red]deleted image found")
                     break
-                for title in soup.find_all('title'): 
+                for title in soup.find_all('title'):
                     if title.get_text() == "Lightshot — screenshot tool for Mac & Win":
                         console.print("[red]redirect found")
                         break
@@ -60,7 +60,7 @@ def start():
                     "url": url,
                     "footer": {
                         "text": "made by laika#1331",
-                        "icon_url": "https://cdn.discordapp.com/attachments/812934536882552872/820684736875724800/laika.jpg"
+                        "icon_url": "https://cdn.discordapp.com/attachments/812934536882552872/844725065995386890/ab67616d0000b273d5df30b611ba46931c2b1d93.jpg"
                     },
                     "author": {
                         "url": "https://github.com/01laika/prnt.sc-scraper",
