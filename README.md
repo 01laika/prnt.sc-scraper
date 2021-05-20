@@ -1,7 +1,7 @@
 # prnt.sc scraper
 ## [prnt.sc tutorial](https://www.youtube.com/watch?v=O_qaGOx50Pc)
 
-![](https://i.gyazo.com/3ae8b438c59cf803c7a18ac0e6d3ac44.gif)
+![](https://cdn.discordapp.com/attachments/812934536882552872/844729466567131146/ezgif.com-gif-maker_1.gif)
 
 # update
 - parses removed pngs
